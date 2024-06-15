@@ -68,7 +68,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88b-lS-qhF">
-                                <rect key="frame" x="148" y="443" width="96" height="44"/>
+                                <rect key="frame" x="16" y="443" width="361" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -79,7 +79,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciI-16-KSK">
-                                <rect key="frame" x="148" y="520" width="96" height="44"/>
+                                <rect key="frame" x="16" y="520" width="361" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -90,7 +90,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFn-w4-kZJ">
-                                <rect key="frame" x="148" y="590" width="96" height="44"/>
+                                <rect key="frame" x="16" y="590" width="361" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -101,7 +101,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiY-LV-XQP">
-                                <rect key="frame" x="148" y="669" width="96" height="44"/>
+                                <rect key="frame" x="16" y="669" width="361" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -122,6 +122,7 @@
                         <outlet property="answerButton4" destination="WiY-LV-XQP" id="l33-sJ-Thq"/>
                         <outlet property="quizNumberLabel" destination="cbb-wi-IvV" id="O2k-6N-ME2"/>
                         <outlet property="quizTextView" destination="mSd-xL-830" id="2yV-ul-Fe2"/>
+                        <segue destination="uCG-na-jLj" kind="presentation" identifier="toScoreVC" id="oFL-HJ-MSg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAH-gO-HuX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -131,7 +132,7 @@
         <!--Score View Controller-->
         <scene sceneID="Amw-dY-0X1">
             <objects>
-                <viewController id="uCG-na-jLj" customClass="ScoreViewController" customModule="sampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="uCG-na-jLj" customClass="ScoreViewController" customModule="sampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2eq-mm-AZw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eau-Mr-qeY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368.7022900763359" y="6.3380281690140849"/>
+            <point key="canvasLocation" x="1418" y="4"/>
         </scene>
     </scenes>
     <resources>

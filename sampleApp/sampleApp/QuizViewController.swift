@@ -38,7 +38,27 @@ class QuizViewController: UIViewController {
     
     //ボタンを押したときに呼ばれる
     @IBAction func btnAction(sender: UIButton) {
-        print(sender.tag)
+        if sender.tag == Int(quizArray[1]) {
+            print("正解")
+        } else {
+            print("不正解")
+        }
+        nextQuiz()
+    }
+    
+    func nextQuiz() {
+        quizCount += 1
+        if quizCount < csvArray.count {
+            quizArray = csvArray[quizCount].components(separatedBy: ",")
+            quizNumberLabel.text = "第\(quizCount + 1)問"
+            quizTextView.text = quizArray[0]
+            answerButton1.setTitle(quizArray[2], for: .normal)
+            answerButton2.setTitle(quizArray[3], for: .normal)
+            answerButton3.setTitle(quizArray[4], for: .normal)
+            answerButton4.setTitle(quizArray[5], for: .normal)
+        } else {
+            performSegue(withIdentifier: "toScoreVC", sender: nil)
+        }
     }
     
     func loadCSV(fileName: String) -> [String] {
