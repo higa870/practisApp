@@ -15,6 +15,7 @@
 		CB0A4C112C1D9975009F515B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CB0A4C102C1D9975009F515B /* Base */; };
 		CB0A4C192C1D9B6B009F515B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A4C182C1D9B6B009F515B /* QuizViewController.swift */; };
 		CB0A4C1B2C1D9C4A009F515B /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A4C1A2C1D9C4A009F515B /* ScoreViewController.swift */; };
+		CB0A4C1D2C1D9FEA009F515B /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = CB0A4C1C2C1D9FEA009F515B /* quiz.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CB0A4C122C1D9975009F515B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB0A4C182C1D9B6B009F515B /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		CB0A4C1A2C1D9C4A009F515B /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		CB0A4C1C2C1D9FEA009F515B /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				CB0A4C062C1D9971009F515B /* SceneDelegate.swift */,
 				CB0A4C082C1D9971009F515B /* ViewController.swift */,
 				CB0A4C0A2C1D9971009F515B /* Main.storyboard */,
+				CB0A4C1C2C1D9FEA009F515B /* quiz.csv */,
 				CB0A4C1A2C1D9C4A009F515B /* ScoreViewController.swift */,
 				CB0A4C182C1D9B6B009F515B /* QuizViewController.swift */,
 				CB0A4C0D2C1D9975009F515B /* Assets.xcassets */,
@@ -134,6 +137,7 @@
 				CB0A4C0E2C1D9975009F515B /* Assets.xcassets in Resources */,
 				CB0A4C112C1D9975009F515B /* Base in Resources */,
 				CB0A4C0C2C1D9971009F515B /* Base in Resources */,
+				CB0A4C1D2C1D9FEA009F515B /* quiz.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
