@@ -111,6 +111,10 @@
                                     <action selector="btnActionWithSender:" destination="ZlH-15-haE" eventType="touchUpInside" id="fTs-VJ-tDw"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qs0-0F-T1d">
+                                <rect key="frame" x="30" y="96" width="333" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kOI-2X-BKS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -120,6 +124,7 @@
                         <outlet property="answerButton2" destination="ciI-16-KSK" id="btq-eh-RrS"/>
                         <outlet property="answerButton3" destination="qFn-w4-kZJ" id="uMq-4N-cuO"/>
                         <outlet property="answerButton4" destination="WiY-LV-XQP" id="l33-sJ-Thq"/>
+                        <outlet property="judgeImageView" destination="Qs0-0F-T1d" id="MGF-b3-bGj"/>
                         <outlet property="quizNumberLabel" destination="cbb-wi-IvV" id="O2k-6N-ME2"/>
                         <outlet property="quizTextView" destination="mSd-xL-830" id="2yV-ul-Fe2"/>
                         <segue destination="uCG-na-jLj" kind="presentation" identifier="toScoreVC" id="oFL-HJ-MSg"/>
@@ -151,11 +156,17 @@
                                 <buttonConfiguration key="configuration" style="plain" title="トップに戻る">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="toTopButtonAction:" destination="uCG-na-jLj" eventType="touchUpInside" id="Gco-GQ-Vbq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h7b-gy-esx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="BUt-4n-GnI" id="bYg-Tv-BPa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eau-Mr-qeY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

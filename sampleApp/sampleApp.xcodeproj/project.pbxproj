@@ -16,6 +16,8 @@
 		CB0A4C192C1D9B6B009F515B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A4C182C1D9B6B009F515B /* QuizViewController.swift */; };
 		CB0A4C1B2C1D9C4A009F515B /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A4C1A2C1D9C4A009F515B /* ScoreViewController.swift */; };
 		CB0A4C1D2C1D9FEA009F515B /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = CB0A4C1C2C1D9FEA009F515B /* quiz.csv */; };
+		CB40F5172C1DA8A1001CF271 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = CB40F5142C1DA8A0001CF271 /* correct.png */; };
+		CB40F5182C1DA8A1001CF271 /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = CB40F5152C1DA8A0001CF271 /* incorrect.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CB0A4C182C1D9B6B009F515B /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		CB0A4C1A2C1D9C4A009F515B /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		CB0A4C1C2C1D9FEA009F515B /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
+		CB40F5142C1DA8A0001CF271 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		CB40F5152C1DA8A0001CF271 /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +74,20 @@
 				CB0A4C1A2C1D9C4A009F515B /* ScoreViewController.swift */,
 				CB0A4C182C1D9B6B009F515B /* QuizViewController.swift */,
 				CB0A4C0D2C1D9975009F515B /* Assets.xcassets */,
+				CB40F5162C1DA8A0001CF271 /* image 2 */,
 				CB0A4C0F2C1D9975009F515B /* LaunchScreen.storyboard */,
 				CB0A4C122C1D9975009F515B /* Info.plist */,
 			);
 			path = sampleApp;
+			sourceTree = "<group>";
+		};
+		CB40F5162C1DA8A0001CF271 /* image 2 */ = {
+			isa = PBXGroup;
+			children = (
+				CB40F5142C1DA8A0001CF271 /* correct.png */,
+				CB40F5152C1DA8A0001CF271 /* incorrect.png */,
+			);
+			path = "image 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +148,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB40F5172C1DA8A1001CF271 /* correct.png in Resources */,
+				CB40F5182C1DA8A1001CF271 /* incorrect.png in Resources */,
 				CB0A4C0E2C1D9975009F515B /* Assets.xcassets in Resources */,
 				CB0A4C112C1D9975009F515B /* Base in Resources */,
 				CB0A4C0C2C1D9971009F515B /* Base in Resources */,

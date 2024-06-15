@@ -14,11 +14,13 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerButton2: UIButton!
     @IBOutlet weak var answerButton3: UIButton!
     @IBOutlet weak var answerButton4: UIButton!
+    @IBOutlet weak var judgeImageView: UIImageView!
     
     var csvArray: [String] = []
     var quizArray: [String] = []
     var quizCount = 0
-
+    var correctCount = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,14 +38,35 @@ class QuizViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let scoreVC = segue.destination as! ScoreViewController
+        scoreVC.correct = correctCount
+    }
+    
     //ボタンを押したときに呼ばれる
     @IBAction func btnAction(sender: UIButton) {
         if sender.tag == Int(quizArray[1]) {
+            correctCount += 1
             print("正解")
+            judgeImageView.image = UIImage(named: "correct")
         } else {
             print("不正解")
+            judgeImageView.image = UIImage(named: "incorrect")
         }
-        nextQuiz()
+        print("スコア：\(correctCount)")
+        judgeImageView.isHidden = false
+        answerButton1.isEnabled = false
+        answerButton2.isEnabled = false
+        answerButton3.isEnabled = false
+        answerButton4.isEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.judgeImageView.isHidden = true
+            self.answerButton1.isEnabled = true
+            self.answerButton2.isEnabled = true
+            self.answerButton3.isEnabled = true
+            self.answerButton4.isEnabled = true
+            self.nextQuiz()
+        }
     }
     
     func nextQuiz() {
