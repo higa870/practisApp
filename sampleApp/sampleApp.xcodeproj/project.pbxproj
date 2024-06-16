@@ -77,15 +77,15 @@
 				CB0A4C082C1D9971009F515B /* ViewController.swift */,
 				CB0A4C0A2C1D9971009F515B /* Main.storyboard */,
 				CB59FA4F2C1E62B000B773E7 /* SelectLevelViewController.swift */,
-				CB0A4C1C2C1D9FEA009F515B /* quiz1.csv */,
-				CB0A4C1A2C1D9C4A009F515B /* ScoreViewController.swift */,
 				CB0A4C182C1D9B6B009F515B /* QuizViewController.swift */,
+				CB0A4C1A2C1D9C4A009F515B /* ScoreViewController.swift */,
+				CB0A4C1C2C1D9FEA009F515B /* quiz1.csv */,
 				CB5A6D572C1E76CA00D66340 /* quiz2.csv */,
 				CB5A6D592C1E776200D66340 /* quiz3.csv */,
 				CB0A4C0D2C1D9975009F515B /* Assets.xcassets */,
-				CB40F5162C1DA8A0001CF271 /* image 2 */,
 				CB0A4C0F2C1D9975009F515B /* LaunchScreen.storyboard */,
 				CB0A4C122C1D9975009F515B /* Info.plist */,
+				CB40F5162C1DA8A0001CF271 /* image 2 */,
 			);
 			path = sampleApp;
 			sourceTree = "<group>";
